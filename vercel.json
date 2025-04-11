@@ -7,16 +7,17 @@
       "config": {
         "buildCommand": "npm run vercel-build",
         "outputDirectory": "web-build",
-        "installCommand": "npm install",
-        "env": {
-          "EXPO_NO_FAVICON": "1"
-        }
+        "installCommand": "npm install"
       }
     }
   ],
   "routes": [
     {
       "src": "/favicon.png",
+      "dest": "/assets/icon.png"
+    },
+    {
+      "src": "/assets/favicon.png",
       "dest": "/assets/icon.png"
     },
     {
