@@ -7,7 +7,10 @@
       "config": {
         "buildCommand": "npm run vercel-build",
         "outputDirectory": "web-build",
-        "installCommand": "npm install"
+        "installCommand": "npm install",
+        "env": {
+          "EXPO_NO_FAVICON": "1"
+        }
       }
     }
   ],
