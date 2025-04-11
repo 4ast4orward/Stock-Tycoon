@@ -9,7 +9,7 @@
     "web": "$env:EXPO_WEB_PORT=3001; npx expo start --web",
     "deploy": "vercel --prod",
     "build": "expo export:web",
-    "vercel-build": "expo export:web",
+    "vercel-build": "node scripts/generate-favicon.js && expo export:web",
     "vercel-deploy": "Remove-Item -Path \".vercel\" -Recurse -Force -ErrorAction SilentlyContinue; vercel --prod --name stock-tycoon-new",
     "check-domains": "vercel domains ls",
     "force-deploy": "Get-Date | Out-File -FilePath \"web-build/deployment-timestamp.txt\"; vercel --prod"
