@@ -13,6 +13,10 @@
   ],
   "routes": [
     {
+      "src": "/favicon.png",
+      "dest": "/assets/icon.png"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
